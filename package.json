@@ -5,10 +5,16 @@
   "author": "240-420",
   "private": true,
   "main": "public/electron.js",
-  "homepage": "./",
+  "homepage": "http://./",
   "repository": {
     "type": "git",
-    "url": "https://github.com/suttirak-mattaya/240-420_hybrid-app_electron.git"
+    "url": "git+https://github.com/suttirak-mattaya/240-420_hybrid-app_electron.git"
+  },
+  "build": {
+    "appId": "hangman",
+    "mac": {
+      "category": "development"
+    }
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
@@ -24,12 +30,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "dev": "electron-forge start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "package": "electron-forge package",
-    "make": "electron-forge make"
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "postinstall": "electron-builder install-app-deps"
   },
   "eslintConfig": {
     "extends": [
@@ -50,13 +56,13 @@
     ]
   },
   "devDependencies": {
-    "@electron-forge/cli": "^6.0.0-beta.67",
     "@electron-forge/maker-deb": "^6.0.0-beta.67",
     "@electron-forge/maker-rpm": "^6.0.0-beta.67",
     "@electron-forge/maker-squirrel": "^6.0.0-beta.67",
     "@electron-forge/maker-zip": "^6.0.0-beta.67",
     "concurrently": "^7.4.0",
     "electron": "^21.1.0",
+    "electron-builder": "^23.6.0",
     "eslint": "^7.30.0",
     "eslint-plugin-react": "^7.24.0",
     "wait-on": "^6.0.1"
@@ -87,5 +93,9 @@
         }
       ]
     }
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/suttirak-mattaya/240-420_hybrid-app_electron/issues"
+  },
+  "license": "ISC"
 }
