@@ -16,18 +16,6 @@
       "category": "development"
     }
   },
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "electron-is-dev": "^2.0.0",
-    "electron-squirrel-startup": "^1.0.0",
-    "lodash": "^4.17.21",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.0.1"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -36,6 +24,19 @@
     "pack": "electron-builder --dir",
     "dist": "electron-builder",
     "postinstall": "electron-builder install-app-deps"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "electron": "^21.1.0",
+    "electron-is-dev": "^2.0.0",
+    "electron-squirrel-startup": "^1.0.0",
+    "lodash": "^4.17.21",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.0.1"
   },
   "eslintConfig": {
     "extends": [
@@ -56,43 +57,9 @@
     ]
   },
   "devDependencies": {
-    "@electron-forge/maker-deb": "^6.0.0-beta.67",
-    "@electron-forge/maker-rpm": "^6.0.0-beta.67",
-    "@electron-forge/maker-squirrel": "^6.0.0-beta.67",
-    "@electron-forge/maker-zip": "^6.0.0-beta.67",
-    "concurrently": "^7.4.0",
-    "electron": "^21.1.0",
     "electron-builder": "^23.6.0",
     "eslint": "^7.30.0",
-    "eslint-plugin-react": "^7.24.0",
-    "wait-on": "^6.0.1"
-  },
-  "config": {
-    "forge": {
-      "packagerConfig": {},
-      "makers": [
-        {
-          "name": "@electron-forge/maker-squirrel",
-          "config": {
-            "name": "hangman"
-          }
-        },
-        {
-          "name": "@electron-forge/maker-zip",
-          "platforms": [
-            "darwin"
-          ]
-        },
-        {
-          "name": "@electron-forge/maker-deb",
-          "config": {}
-        },
-        {
-          "name": "@electron-forge/maker-rpm",
-          "config": {}
-        }
-      ]
-    }
+    "eslint-plugin-react": "^7.24.0"
   },
   "bugs": {
     "url": "https://github.com/suttirak-mattaya/240-420_hybrid-app_electron/issues"
