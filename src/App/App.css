@@ -1,0 +1,270 @@
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card {
+    display: inline-flex;
+    text-align: center;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    width: 10vmin;
+    height: 10vmin;
+    font-size: 5vmin;
+    margin: 0.6vmin;
+    user-select: none;
+    cursor: pointer;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    border: 0.3vmin solid black;
+    border-bottom: 1vmin solid black;
+    color: black;
+    background-color: white;
+}
+.card:hover {
+    border: 0.3vmin solid rgb(0, 0, 133);
+    border-bottom: 1vmin solid rgb(0, 0, 133);
+    color: rgb(0, 0, 133);
+    background-color: white;
+    font-size: 6vmin;
+}
+.card:active {
+    border: 0.3vmin solid rgb(25, 25, 173);
+    border-bottom: 0.6vmin solid rgb(25, 25, 173);
+    color: rgb(25, 25, 173);
+    background-color: #e9eaeb;
+    font-size: 5vmin;
+}
+.active-card {
+    color: transparent;
+    background: transparent;
+    border: none;
+    font-size: 5vmin;
+    cursor: default;
+}
+.active-card:hover {
+    color: transparent;
+    background: transparent;
+    border: none;
+    font-size: 5vmin;
+}
+.active-card:active {
+    color: transparent;
+    background: transparent;
+    border: none;
+    font-size: 5vmin;
+}
+.left_frame {
+    box-sizing: border-box;
+    height: 58vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 68vw;
+    margin-bottom: 2vh;
+}
+.usage {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    height: 36vh;
+    padding: 2vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 68vw;
+    margin-bottom: 2vh;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: black;
+    color: white;
+}
+.canvas {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    height: 20vh;
+    padding: 2vmin;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 68vw;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: white;
+}
+.canvas div {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.1vw;
+    margin-right: 0.1vw;
+    font-size: 4vmin;
+}
+.status {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    height: 58vh;
+    padding: 2vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 26vw;
+    margin-left: 2vw;
+    margin-bottom: 2vh;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: white;
+}
+.top_frame {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.screen {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2vmin;
+    background: rgb(233, 233, 233);
+}
+.keyboard {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    width: 96vw;
+    height: 40vh;
+    padding: 2vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: white;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    width: 100%;
+    margin-bottom: 2vh;
+}
+@media (prefers-reduced-motion: no-preference) {
+    #description img {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+#description img {
+    margin-right: 0.7vw;
+    pointer-events: none;
+}
+#description div{
+    width: 30%;
+}
+#description div div{
+    width: 100%;
+    text-align: end;
+}
+#description .h-seperator {
+    height: 0.4vh;
+}
+.h-seperator {
+    height: 0.6vh;
+    width: 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 85%, rgba(255,255,255,0) 100%);
+}
+.lab {
+    font-size: 9vmin;
+}
+.std-id {
+    font-size: 2vmin;
+}
+#game-status {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    width: 90%;
+}
+#game-status div {
+    width: 50%;
+    font-size: 3vmin;
+}
+.left {
+    text-align: left;
+}
+.right {
+    text-align: right;
+}
+
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    0% {
+        transform: rotate(0deg) scale(1,1);
+    }
+    50% {
+        transform: rotate(180deg) scale(0.8, 0.8);
+    }
+    100% {
+        transform: rotate(360deg) scale(1,1);
+    }
+}
